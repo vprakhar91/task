@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter",sans-serif;
+}
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+}
+.container{
+
+    min-height: calc(100vh - 40px * 2);
+    
+    display: grid;
+    
+    grid-template-columns: 50% 50%;
+    
+    border-radius: 10px;
+    
+    overflow: hidden;
+    
+    }
+    .login-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 100px;
+        background-color: white;
+    }
+    .login-header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-between;
+        gap: 11.05px;
+      }
+   .login-header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 130px;
+   }
+.login-header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    margin-right: 120px;
+    width: 90%;
+    color: rgba(16, 24, 40, 1);
+}
+.login-header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 19px;
+    line-height: 23px;
+    align-items: center;
+    width: 90%;
+    color: rgba(71, 84, 103, 1);
+    margin-right: 90px;
+    margin-top: 10px;
+}
+.login-header h1,
+.login-header p{
+   display: flex;
+   justify-content: center;
+}
+.login-right{
+    display: flex;
+    justify-content: center;
+}
+.form-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pass-key {
+    padding-right: 30px; 
+}
+
+.password-toggle {
+    position: absolute;
+    top: 80%;
+    right: 10px; 
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+}
+.remember-forgot {
+    margin-top: 258px;
+    padding: 10px 0; 
+    font-size: 16px; 
+    position: absolute;  
+    transform: translate(30px, -10px);
+    color: black;
+    margin-left: 234px;
+}
+.bg-grey{
+    width: 100%;
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em;
+    color: gray;
+    margin-top: 2.5px;
+    margin-left: 50px;
+}
+.login-right img{
+    width: 85%;
+    margin-top: 10px;
+}
+.login-header{
+    margin-top: 50px;
+}
+
+
+.login-form{
+    width: 450px;
+    margin-top: 50px;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.login-footer{
+    display: flex;
+    gap: 30px;
+    width: 360px;
+    height: 44px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.login-footer a{
+    flex: 6;
+    gap: 15px;
+    background-color: rgba(255, 252, 246, 1);
+    padding: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+.login-footer a:hover{
+    background-color: black;
+    color: white;
+}
+.form-tem label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 1px 0;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+input[type='email'],
+input[type='password']{
+    border: 1px solid rgba(208, 213, 221, 1);
+    height: 44px;
+    width: 360px;
+    padding: 10px 14px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 12px;
+
+}
+.pass-key{
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.show{
+    display: block;
+    position: absolute;
+    margin-left: 380px;
+    bottom: 250px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+label[for = email],
+label[for = password],
+label[for = text]{
+    font-family: Inter;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    font-weight: 4600;;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    gap: 7px;
+}
+input[type="checkbox"]{
+    width: 16px;
+    height: 18px;
+    gap: 7px;
+    border-radius: 8px;
+    accent-color: black;
+}
+button{
+    border: none;
+    padding: 1rem;
+    width: 360px;
+    height: 44px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: rgba(254, 200, 135, 1);
+    box-shadow: 5px 6px rgba(79, 79, 79, 1);
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+::placeholder{
+    color: grey;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.graph p{
+    font-family: "Inter";
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+}
+.graph h5{
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.graph h6{
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.icon{
+ margin-left: 450px;
+}
